@@ -1,0 +1,5 @@
+2. SELECT cities.name FROM cities JOIN countries ON cities.country=countries.name WHERE visaForWakandaCitizens="1";
+
+5.SELECT cities.country as "Countries that specialize Architecture" FROM cities JOIN sites ON cities.name=sites.city 
+JOIN sitetype ON sites.type=sitetype.id WHERE sitetype.type="Architect";
+(Shows countries that have cities that specialize in architecture")
